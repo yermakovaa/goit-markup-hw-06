@@ -52,7 +52,35 @@
         <section class="hero overlay">
             <div class="block-hero container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <a href="#" class="button">Заказать услугу</a>
+                <button class="button" data-modal-open>Заказать услугу</button>
+                <div class="backdrop is-hidden" data-model>
+                    <div class="data-modal">
+                        <form>
+                            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>  
+                            <div class="modal-form">
+                                <label for="name"></label>
+                                <input type="name" name="name" id="name" placeholder="Имя">
+                            </div>
+                            <div class="modal-form">
+                                <label for="tel"></label>
+                                <input type="tel" name="tel" id="tel" placeholder="Телефон">
+                            </div>
+                            <div class="modal-form">
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email" placeholder="Почта">
+                            </div>
+                            <div class="modal-form">
+                                <label for="comment"></label>
+                                <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Комментарий"></textarea>
+                            </div>
+                            <div class="modal-form">
+                                <input type="checkbox" name="policy" id="policy" />
+                                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                            </div>                            
+                            <button type="submit" data-modal-close class="button-close">Отправить</button>
+                        </form>                        
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Преимущества -->
@@ -401,5 +429,6 @@
                 });
         })();
     </script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
