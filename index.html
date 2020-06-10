@@ -71,13 +71,16 @@
                             </div>
                             <div class="modal-form">
                                 <label for="comment"></label>
-                                <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Комментарий"></textarea>
+                                <textarea class="comment" name="comment" id="comment" rows="" placeholder="Комментарий"></textarea>
                             </div>
-                            <div class="modal-form">
+                            <div class="modal-policy">
                                 <input type="checkbox" name="policy" id="policy" />
                                 <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
                             </div>                            
                             <button type="submit" data-modal-close class="button-close">Отправить</button>
+                            <svg class="icon-close" width="30" height="30">
+                                <use href="./img/sprite.svg#icon-close"></use>
+                            </svg>
                         </form>                        
                     </div>
                 </div>
@@ -401,7 +404,7 @@
                             <label for="mail"></label>
                             <input type="email" name="mail" id="mail" placeholder="E-mail">
                         </div>
-                        <button type="submit" class="form-buttom">
+                        <button type="submit" class="form-button">
                             <span class="form-subscription">Подписаться</span>
                             <svg class="icon-send" width="24" height="24">
                                 <use href="./img/sprite.svg#icon-send"></use>
