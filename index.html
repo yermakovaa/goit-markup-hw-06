@@ -369,7 +369,7 @@
                 </div>
                 <div class="subscription">    
                     <b class="call">Подпишитесь на рассылку</b>
-                    <form class="form js-speaker-form">                        
+                    <form class="form js-speaker-form" autocomplete="off">                        
                         <div class="form-field">
                             <label for="mail"></label>
                             <input type="email" name="mail" id="mail" placeholder="E-mail">
@@ -419,7 +419,7 @@
                 </div>
                 <div class="modal-policy">        
                     <label>
-                        <input type="checkbox" class="checkbox visually-hidden" />
+                        <input type="checkbox" name="checkbox" class="checkbox visually-hidden" />
                         <span class="icon-check"></span>                        
                         <span>
                             Соглашаюсь с рассылкой и принимаю
@@ -427,16 +427,18 @@
                         </span>                        
                     </label>
                 </div>
-                <button type="submit" class="button-close">Отправить</button>                
+                <button type="submit" class="button-send">Отправить</button>
             </form>
             <button type="submit" data-modal-close class="icon-close">
                 <svg width="18" height="18">
                     <use href="./img/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            
         </div>
     </div>
     <!-- Скрипты -->
+    <script src="./js/modal.js"></script>
     <script>
         (() => {
             document
@@ -452,6 +454,5 @@
                 });
         })();
     </script>
-    <script src="./js/modal.js"></script>
 </body>
 </html>
