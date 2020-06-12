@@ -775,7 +775,7 @@ img {
 }
 
 .icon-check {
-    display: flex;
+    display: inline-block;
     margin-right: 8px;
     
     width: 15px;
@@ -817,12 +817,13 @@ img {
     color: var(--accent-color);
 }
 
-.button-close {
+.button-send {
     align-items: center;
     text-align: center;
 
     width: 200px;
     height: 50px;
+    padding: 0;
     border: none;
 
     background-color: var(--accent-color);
