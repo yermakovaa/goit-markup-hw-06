@@ -720,7 +720,7 @@ img {
 
 .modal-form input:focus,
 .modal-form input:not(:placeholder-shown) {
-    border: 1px solid var(--accent-color);
+    outline-color: var(--accent-color);
 }
 
 .modal-form input:focus + label,
@@ -772,7 +772,7 @@ img {
 
 .modal-comment textarea:focus,
 .modal-comment textarea:not(:placeholder-shown) {
-    border: 1px solid var(--accent-color);
+    outline-color: var(--accent-color);
 }
 
 .icon-check {
