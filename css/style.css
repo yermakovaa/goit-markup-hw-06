@@ -718,21 +718,23 @@ img {
     border-radius: 4px;
 }
 
-.modal-form input:focus,
-.modal-form input:not(:placeholder-shown) {
-    border: 1px solid var(--accent-color);
+.modal-form input:focus {
+    outline-color: var(--accent-color);
 }
 
 .modal-form input:focus + label,
 .modal-form input:not(:placeholder-shown) + label {
     font-size: 12px;
     line-height: 1.17;
-    color: var(--accent-color);
+
     transform: translate(-26px, -36px);
 }
 
-.modal-form input:focus ~ .icon-input,
-.modal-form input:not(:placeholder-shown) ~ .icon-input {
+.modal-form input:focus + label {
+    color: var(--accent-color);
+}
+
+.modal-form input:focus ~ .icon-input {
     color: var(--accent-color);
 }
 
@@ -766,13 +768,16 @@ img {
 .modal-comment textarea:not(:placeholder-shown) + label {
     font-size: 12px;
     line-height: 1.17;
-    color: var(--accent-color);
+    
     transform: translateY(-28px);
 }
 
-.modal-comment textarea:focus,
-.modal-comment textarea:not(:placeholder-shown) {
-    border: 1px solid var(--accent-color);
+.modal-comment textarea:focus + label {
+    color: var(--accent-color);
+}
+
+.modal-comment textarea:focus {
+    outline-color: var(--accent-color);
 }
 
 .icon-check {
